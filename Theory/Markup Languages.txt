@@ -1,0 +1,36 @@
+(1) SGML: 
+    Standard Generalized Markup Language.
+
+	(a) Start with single word than word itself tag between 1 to 10 characters combination.
+
+		Categories:
+		1) Typograpgy - Text | NEWS PAPER
+		2) List | NEWS PAPER
+		3) Table | NEWS PAPER
+		4) Form | NEWS PAPER
+		5) Link | NEWS PAPER
+		6) Extra Markup | NO NEWS PAPER
+
+	(b) Id more than 1 word combinely creates a phrase than first character of each creates a tag.
+		Example: 
+			(1) Unordered List : UL
+			(2) List Item : LI
+			(3) Ordered List : OL
+			(4) Definition List : DL
+			(5) Data Title : DT
+			(6) Data Description : DD
+		
+TWO type of path in extra mark up category:
+1) Folder Inside: 
+[--Name Of A Folder--] / [--Name Of A File-]
+
+2) Folder Outside:
+../ [--Name Of A File-]
+
+	(b) If two words combinely define a phrase than first character of each word creates a tag.
+
+(2) In pure HTML no end tag only start tag.
+	<p>Hello Akshay
+
+	<p><b>Hello</b> Akshay</p>
+	   - XHTML (XML + HTML)

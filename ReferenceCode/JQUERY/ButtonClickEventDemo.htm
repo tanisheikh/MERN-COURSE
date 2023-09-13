@@ -1,0 +1,75 @@
+﻿<html>
+    <head>
+        <title>Demo JQUERY</title>
+        
+		<!--CDN LINK OF JQUERY PARENT PLUG IN - COMPULSORY TO BE HERE. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+		
+		<!--<script type="text/javascript" src="JS/Demo.js"></script>-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				$("#BtnShow").attr("disabled",true);
+				
+				$("#BtnHide").click(function(){
+					if(confirm("Are you sure ..??"))
+					{
+						$("#MyDiv").hide(3000);
+						$(this).attr("disabled",true);
+						$("#BtnShow").attr("disabled",false);
+						$("#BtnToggle").text("Show");
+					}
+				});
+				
+				$("#BtnShow").click(function(){
+					if(confirm("Are you sure..?"))
+					{
+						$("#MyDiv").show(3000);
+						$(this).attr("disabled",true);
+						$("#BtnHide").attr("disabled",false);
+						$("#BtnToggle").text("Hide");
+					}
+				});
+				
+				$("#BtnToggle").click(function(){
+					if(confirm("Are you sure..?")){
+						$("#MyDiv").toggle(3000);
+						($(this).text()=="Hide")
+						?($(this).text("Show"),$("#BtnHide").attr("disabled",true),$("#BtnShow").attr("disabled",false))
+						:($(this).text("Hide"),$("#BtnShow").attr("disabled",true),$("#BtnHide").attr("disabled",false));
+					}
+				});
+				
+				$("#BtnPlus").click(function(){
+					var MyDivHeightWidth=parseInt($("#MyDiv").css("height"));
+					if(MyDivHeightWidth<500){
+						MyDivHeightWidth+=10;
+						$("#MyDiv").css("height",MyDivHeightWidth);
+						$("#MyDiv").css("width",MyDivHeightWidth);
+					}
+					else{
+						alert("More than 500 px is not possible.")
+					}
+				});
+				$("#BtnMinus").click(function(){
+										var MyDivHeightWidth=parseInt($("#MyDiv").css("height"));
+					if(MyDivHeightWidth>20){
+						MyDivHeightWidth-=10;
+						$("#MyDiv").css("height",MyDivHeightWidth);
+						$("#MyDiv").css("width",MyDivHeightWidth);
+					}
+					else{
+						alert("Less than 20 px is not possible.")
+					}
+
+				});
+			});
+		</script>
+	</head>
+    <body>
+        <div id="MyDiv" style="height:300px;width:300px;background-color:Navy;"></div><hr />
+		<button id="BtnHide">Hide</button>&nbsp;&nbsp;<button id="BtnShow">Show</button><hr />
+        <button id="BtnToggle">Hide</button><hr />
+        <button id="BtnPlus" style="font-size:xx-large;"><b>+</b></button>&nbsp;&nbsp;<button id="BtnMinus" style="font-size:xx-large;"><b>-</b></button><hr />
+    </body>
+</html>

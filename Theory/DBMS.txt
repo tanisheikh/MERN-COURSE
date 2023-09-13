@@ -1,0 +1,95 @@
+DBMS - Database Management System.
+Database - Collection of datatable - Logical group of datatables.
+Datatable - Collection of datarows.
+Datarow - Collection of column cells.
+
+Insert have no issues with unstructured data as well as information.
+Update, delete & select creates an issue with unstructured data - its time consuming and less maintable.
+
+PRIMARY KEY: Each records must have a column with no null value, no repeat value, no modification, only one column of that type in complete table.
+UNIQUE KEY: Each records must have a column with only one null value, no repeat value, it can be modified with non-repeat values, this types of column can be multiple in single table.
+FOREIGHN KEY: Maintain the integrity between parent and child.
+
+RDBMS - Relational Database Management System.
+Database - Logical group of datatables.
+Datatable - Collection of integrated datarows.
+Datarow - Collection of column cells.
+
+Example: 
+Student_Master: 1 NORMAL FORM
+RollNo	FirstName	LastName	ContactNo	EmailId		        Gender 		Address			Pincode		City	State	Country		Subject		Marks	Status
+1		Raj			Vasani		8998899889	rv@gmail.com		M 			Kalawad road.	360005		Rajkot	Gujarat	INDIA		Physics		99		Owner Class									
+1		Raj			Vasani		8998899889	rv@gmail.com		M 			Kalawad road.	360005		Rajkot	Gujarat	INDIA		Chemistry	98		Owner Class									
+1		Raj			Vasani		8998899889	rv@gmail.com		M 			Kalawad road.	360005		Rajkot	Gujarat	INDIA		Maths	    100		Owner Class									
+
+
+Student_Master: 2 NORMAL FORM
+(P_Key)							(U_Key)		(U_Key)
+(F_Key)
+RollNo	FirstName	LastName	ContactNo	EmailId		        Gender 		Address			Pincode		City	State	Country		
+1		Raj			Vasani		8998899889	rv@gmail.com		M 			Kalawad road.	360005		Rajkot	Gujarat	INDIA		
+2		Radhika		Parsana		7998899889	rp@gmail.com		F 			Kalawad road.	360005		Rajkot	Gujarat	INDIA		
+
+{Composite Primary Key}
+P_Key1<->P_Key2
+(F_Key)
+RollNo	Subject				Marks	Status
+1		Physics				99		Owner Class									
+1		Chemistry			98		Owner Class									
+1		Maths	    		100		Owner Class									
+2		Physics				99		Owner Class									
+2		Chemistry			98		Owner Class									
+2		Maths	    		100		Owner Class									
+
+Student_Master: 3 NORMAL FORM - A=B & B=c Than A=c - Transitive Law
+(P_Key)							(U_Key)		(U_Key)											(F_Key)
+(F_Key)
+RollNo	FirstName	LastName	ContactNo	EmailId		        Gender 		Address			Pincode		
+1		Raj			Vasani		8998899889	rv@gmail.com		M 			Kalawad road.	360005				
+2		Radhika		Parsana		7998899889	rp@gmail.com		F 			Kalawad road.	360005		
+
+
+{Composite Primary Key}
+P_Key1<->P_Key2
+(F_Key)
+RollNo	Subject				Marks	Status
+1		Physics				99		Owner Class									
+1		Chemistry			98		Owner Class									
+1		Maths	    		100		Owner Class									
+2		Physics				99		Owner Class									
+2		Chemistry			98		Owner Class									
+2		Maths	    		100		Owner Class									
+
+
+Student_City_State_Country_Master
+(P_Key)
+(F_Key)
+Pincode		City	State	Country		
+360005		Rajkot	Gujarat	INDIA
+
+Student_Master: 4 NORMAL FORM
+(P_Key)							(U_Key)		(U_Key)											(F_Key)
+(F_Key)
+RollNo	FirstName	LastName	ContactNo	EmailId		        Gender 		Address			Pincode		
+1		Raj			Vasani		8998899889	rv@gmail.com		M 			Kalawad road.	360005				
+2		Radhika		Parsana		7998899889	rp@gmail.com		F 			Kalawad road.	360005		
+
+
+{Composite Primary Key}
+P_Key1<->P_Key2
+(F_Key)
+RollNo	Subject				Marks	Status
+1		Physics				99		Owner Class									
+1		Chemistry			98		Owner Class									
+1		Maths	    		100		Owner Class									
+2		Physics				99		Owner Class									
+2		Chemistry			98		Owner Class									
+2		Maths	    		100		Owner Class									
+
+
+Student_City_State_Country_Master
+(P_Key)
+(F_Key)
+Pincode		City	State	Country		
+36000		Rajkot	Gujarat	INDIA
+

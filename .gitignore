@@ -1,0 +1,5 @@
+# ignore nodemodule
+CRUD_With_MongoDB_Express_Node_MEN/node_modules/
+React_1/Node/Demo/node_modules
+React_1/Node/Demo-1/node_modules
+React_1/Node/Demo-2/node_modules

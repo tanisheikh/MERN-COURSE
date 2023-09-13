@@ -1,0 +1,3 @@
+1) JS - No datatypes | TS - Type specific.
+2) JS - No OOPS concept | TS - Support OOPS concept.
+3) JS - No return in functions | TS- Return type of function is type specified.

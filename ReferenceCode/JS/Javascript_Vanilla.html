@@ -1,0 +1,83 @@
+<html>
+	<head>
+		
+		<title>Demo Javascript Vanilla - JS</title>
+		
+		<style type="text/css">
+			body{background-color:Green;}
+			#D1{background-color:Red;height:300px;width:300px;}
+		</style>
+		
+		<script src="scripts/demo.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			function AlertFun(){
+				alert("Hello Students..");
+			}
+			function ConfirmFun(){
+				if(confirm("Are You Sure..??"))
+				{
+					alert("YESSS");
+				}
+				else
+				{
+					alert("NOOO");
+					}
+			}
+			function PromptFun(){
+				var FirstName=prompt("Enter First Name Here..");
+				var MiddleName=prompt("Enter Middle Name Here..");
+				var LastName=prompt("Enter Last Name Here..");
+				
+				alert(FirstName+" "+MiddleName+" "+LastName);
+			}
+			
+			function RedBGBody(){
+				document.body.style.backgroundcolor="Red";
+			}
+			function BGChangeTextBoxBody(){
+				document.body.style.backgroundColor=prompt("Enter New Background Color..");
+			}
+			function ColorPickerBodyBG(){
+				document.body.style.backgroundColor=document.getElementById("CP").value;
+			}
+			
+			function YellowBGDiv(){
+				document.getElementById("D1").style.backgroundColor="yellow";
+			}
+			function BGChangeTextBoxDiv(){
+				document.getElementById("D1").style.backgroundColor=prompt("Enter New Color For Div..");
+			}
+			function ColorPickerDivBG(){
+				document.getElementById("D1").style.backgroundColor=document.getElementById("CP1").value;
+			}
+			
+		</script>
+	</head>
+	<body>
+		
+		<div id="D1">
+			Abhishek Pujara
+		</div><hr/>
+		
+		<input type="button" value="Alert Inline" onclick="alert('Hello Abhihek')" />
+		<input type="button" value="Alert Internal" onclick="AlertFun()" />
+		<input type="button" value="Alert External" onclick="AlertFunE()" /><hr/>
+		
+		<input type="button" value="Confirm Inline" onclick="confirm('Are You Sure..??')" />
+		<input type="button" value="Confirm Internal" onclick="ConfirmFun()"/>
+		<input type="button" value="Confirm External" onclick="ConfirmFunE()"/><hr/>
+		
+		<input type="button" value="Prompte Inline" onclick="prompt('Enter First Name')"/>
+		<input type="button" value="Prompte Internal" onclick="PromptFun()"/>
+		<input type="button" value="Prompte External" onclick="PromptFunE()"/><hr/>
+		
+		<input type="button" value="RED BG" onclick="RedBGBody()"/><hr/>
+		<input type="button" value="CHANGE BG BOX" onclick="BGChangeTextBoxBody()"/><hr/>
+		<input type="color" id="CP" onchange="ColorPickerBodyBG()"/><hr/>
+		
+		<input type="button" value="YELLOW BG" onclick="YellowBGDiv()"/><hr/>
+		<input type="button" value="CHANGE DIV BOX" onclick="BGChangeTextBoxDiv()"/><hr/>
+		<input type="color" id="CP1" onchange="ColorPickerDivBG()" /><hr/>
+	</body>
+</html>

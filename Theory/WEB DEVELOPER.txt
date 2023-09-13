@@ -1,0 +1,21 @@
+WEB DESIGNING (Front End)
+(1) SGML, HTML, XML, XHTML, DHTML.
+(2) CSS.
+(3) Javascript.
+(4) jQuery
+(5) jQuery UI.
+(6) Bootstrap - Media Query.
+(7) Scroll Ply.
+(8) Parallex.
+(9) Lazy Load.
+
+DBMS (Database Management System)
+(1) Normalization.
+(2) Keys.
+(3) Query - Stored Procedure.
+
+Web Development (Code Behind)
+(1) C# Programming (Basic).
+(2) Database Connectivity.
+(3) Architecture.
+(4) Web API.

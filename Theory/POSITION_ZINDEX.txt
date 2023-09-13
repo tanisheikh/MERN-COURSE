@@ -1,0 +1,8 @@
+5 type of positions:
+1) Static OR Initial: Top-Left Corner of Its Direct Parent
+2) Relative: Margin Occupied In Relation With Direct Parent.
+3) Absolute: Margin Occupied In Relation With Grand Parent.
+4) Fixed: Margin Occupied In Relation With Full Screen.
+
+z-index: 1 (UPPER SIDE)
+z-index: -1 (LOWER SIDE)

@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Bootstrap Form Demo</title>
+        
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        
+		<link href="css/bootstrap/bootstrap.css" type="text/css" rel="stylesheet" />
+		
+		<style type="text/css">
+			#CNAForm{box-shadow:0px 0px 5px gray;margin-top:40px;margin-bottom:40px;}
+			i.fa,span{color:teal;}
+			span{font-weight:bold;}
+		</style>
+		
+		<!--CDN LINK OF JQUERY PARENT PLUG IN - COMPULSORY TO BE HERE. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				<!--FirstName, LastName, Contact No. ==> Keypress -->
+				<!--ALL TextBox ==> Blur Validation. -->
+				<!--Button Click Validation - For All Textbox. -->
+			});
+		</script>
+		
+    </head>
+    <body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4" id="CNAForm">
+					<h3 class="text-center"><i class="fa fa-user-plus"></i> Create New Account</h3><hr/>					
+					<div class="form-group">
+						<span>First Name:</span>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-user"></i></span>
+							<input id="TxtFirstName" class="form-control" type="text" placeholder="Enter First Name Here.." maxlength="20" />
+						</div>
+						<small class="text-danger" id="TxtFirstNameValidate"></small>
+					</div>
+					<div class="form-group">
+						<span>Last Name:</span>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-user"></i></span>
+							<input type="text" placeholder="Enter Last Name Here.." maxlength="20" id="TxtLastName" class="form-control" />
+						</div>
+						<small id="TxtLastNameValidate" class="text-danger"></small>
+					</div>
+					<div class="form-group">
+						<span>Email Id:</span>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+							<input type="text" placeholder="Enter Email Id Here.." maxlength="50" id="TxtEmailId" class="form-control" />
+						</div>
+						<small id="TxtEmailIdValidate" class="text-danger"></small>
+					</div>
+					<div class="form-group">
+						<span><i class="fa fa-phone"></i> Contact No.:</span>
+						<div class="input-group">
+							<span class="input-group-addon">+91-</span>
+							<input type="text" placeholder="Enter Contact No. Here.." maxlength="10" id="TxtContactNo" class="form-control" />
+						</div>
+						<small id="TxtContactNoValidate" class="text-danger"></small>
+					</div>
+					<div class="form-group">
+						<span>Password:</span>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-key"></i></span>
+							<input type="password" placeholder="Enter Password Here.." maxlength="12" id="TxtPassword" class="form-control" />
+						</div>
+						<small id="TxtPasswordValidate" class="text-danger"></small>
+					</div>
+					<div class="form-group">
+						<span>Gender:</span>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-male"></i> | <i class="fa fa-female"></i></span>
+							<select class="form-control" id="DDL_Gender">
+								<option value="M">Male</option>
+								<option value="F">Female</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<a class="btn btn-primary" id="BtnCreateNewAccount"><i style="color:white;" class="fa fa-users"></i> Create New Account</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

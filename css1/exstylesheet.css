@@ -1,0 +1,10 @@
+<html>
+<head>
+<style type="text/css">
+.DemoCLS{background-color:orange;color:blue;font-size:14;height:200px;width:200px;}
+</style>
+</head>
+<body>
+<div class="DemoCLS">Internal Stylesheet - CLASS NAME</div><hr/>
+</body>
+</html>

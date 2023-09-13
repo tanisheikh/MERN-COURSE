@@ -1,0 +1,8 @@
+Steps:
+
+1) Count the main rows and declare div tag for the individual row with appropriate unique id.
+
+2) Count the columns inside the specific row and declare the div tag with appropriate id inside the specific row.
+
+3) Box-Model: Padding-Top + Padding-Bottom + Margin-Top + Margin-Bootom ==> Includes In Total Height.
+4) Box-Model: Padding-Left + Padding-Right + Margin-Left + Margin-Right ==> Includes In Total Width.

@@ -1,0 +1,10 @@
+jQuery: Readymade function library of Javascript itself is called jQuery.
+
+STEPS:
+1) Declare jQuery CDN Link with head of our web page.
+2) jQuery function have to types of syntax:
+	(2.1) Function chaining - All functions declared and defined inside the body part of an another function than its called function chaining. (ALl functions must be declared & defined inside the ready function.)
+	(2.2) Function callback - Anonymous function.
+	
+	(A) Ready is a load event of jQuery in our web page.
+	(B) Always start code with ready function calling.
